@@ -1,7 +1,8 @@
-# For_whom_we_read
+# For_whom_we_read 
+
 Data visualization program on user data of reciter on Bilibili
 
-信息可视化工具，使用Dash制作
+针对Bilibili《朗读者》核心用户的信息可视化平台，主要使用Dash和plotly制作
 
 ## 官话
 
@@ -14,3 +15,4 @@ Data visualization program on user data of reciter on Bilibili
 ## 人话
 
 在B站爬了些数据，做了点微不足道的分析，希望你看得开心。
+
