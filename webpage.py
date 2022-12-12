@@ -177,8 +177,10 @@ app.layout = html.Div([
     dcc.Graph(figure=fig22),
     html.P(children="【弹幕关注点】我们统计了核心用户所发送弹幕的高频词，并将其与所有弹幕对比，发现与一般用户相比，核心用户更喜欢用以上词汇。", className="app__header__title--grey",style={'font-family':"Huiwen-mincho", 'color':'blue'}),
     html.P(children="在上表中不难发现，用户对诸如“读者”、“老师”等名词更加敏感，符合学生群体的特征。“致敬”是典型的刷频弹幕关键词，而在核心群体中，这类关键词出现的频率大大降低.",
-           className="app__header__title--grey", style={'font-family': "Huiwen-mincho"}),
-    html.P(children="所以，我们不妨对观众们的弹幕质量展开分析", className="app__header__title--grey",
+           className="app__header__title--grey", style={'font-family': "Huiwen-mincho", 'color':'purple'}),
+    html.P(children="事已至此，我们不妨更进一步，对观众们的弹幕质量展开分析。", className="app__header__title--grey",
+           style={'font-family': "Huiwen-mincho", 'color':'purple'}),
+    html.P(children=" ", className="app__header__title--grey",
            style={'font-family': "Huiwen-mincho"}),
     html.H1(children="“契阔谈讌”——弹幕情感倾向与质量分析",style={'font-family':"Huiwen-mincho"}),
     dcc.Graph(figure=fig23),
@@ -213,7 +215,7 @@ app.layout = html.Div([
     Input('submit-val', 'n_clicks'),
 )
 def update_output(n_clicks):
-    return 'Peter：“ {}”'.format(
+    return 'Steven：“ {}”'.format(
         nonsense_words[n_clicks%500]
     )
 app.run_server(debug=True, use_reloader=False)  # Turn off reloader if inside Jupyter
