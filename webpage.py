@@ -11,7 +11,7 @@ df0 = df0[-80:]
 df0["ratio"] = df0["ratio"].map(lambda x: x ** 0.4)
 
 
-fig_dict = fig = px.scatter(df0, x='follower', y='ratio',size='Frequency', color='class',hover_name="Name", log_x=True,log_y= True, size_max=60,title='《朗读者》活跃用户关注UP主粉丝数及其显著系数')
+fig_dict = fig = px.scatter(df0, x='follower', y='ratio',size='Frequency', color='class',hover_name="Name", log_x=True,log_y= True, size_max=60,title='《朗读者》活跃用户群体关注UP主粉丝数及其显著系数')
 
 
 df = pd.read_csv('data/opt/summary_follow_modi_3_strip.csv').astype({"ratio":float})
